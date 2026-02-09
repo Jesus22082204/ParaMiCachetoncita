@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Para Valentina 💕</title>
+    <title>Para mi Valentina 💕</title>
     <style>
         * {
             margin: 0;
@@ -450,6 +450,15 @@
                 font-size: 1em;
             }
         }
+
+        .hint-text {
+            display: none;
+            font-size: 0.9em;
+            color: #f3e8ff;
+            margin-top: 12px;
+            font-style: italic;
+            animation: fadeIn 0.8s ease;
+        }
     </style>
 </head>
 
@@ -508,7 +517,7 @@
                 para este 14 estoy preparando algo especial para ti,
                 hecho con mucho cariño y amor.
                 <br><br>
-                mira una pequeña pista (una de las cosas que iran en tu detalle mi niña hermosa) …
+                mira una pequeña pista (una de las cosas que irán en tu detalle mi niña hermosa) …
             </div>
             <button class="btn-hint" onclick="showHint()">ver la pista 🎁</button>
             <div class="hint-image" id="hintImage"></div>
@@ -612,8 +621,14 @@
 
         function showHint() {
             const hintImage = document.getElementById('hintImage');
+            const hintText = document.getElementById('hintText');
+
             hintImage.innerHTML = '<img src="1.jpeg" alt="Pista de San Valentín">';
+            hintText.style.display = 'block';
+
+            
         }
+        
 
         // Elefantes y corazones morados lloviendo continuamente
         function createFallingHeart() {
