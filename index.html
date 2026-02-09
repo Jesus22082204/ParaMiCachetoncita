@@ -592,17 +592,7 @@
 
             const messageIndex = Math.min(noClickCount - 1, messages.length - 1);
 
-            message.innerHTML = `
-                Sé que nos conocemos hace poco, pero cada conversación contigo me hace sonreír de una forma especial.
-                <br><br>
-                En este <span class="highlight">San Valentín</span>, me gustaría saber...
-                <br><br>
-                ¿Te gustaría ser mi <span class="highlight">Valentín</span>? ✨
-                <br><br>
-                <strong style="color: #8b5cf6; font-size: ${1.3 + (noClickCount * 0.2)}em; animation: pulse 0.5s ease;">
-                    ${messages[messageIndex]}
-                </strong>
-            `;
+            
 
             // Agrandar el botón Sí progresivamente
             const newSize = 1.3 + (noClickCount * 0.3);
